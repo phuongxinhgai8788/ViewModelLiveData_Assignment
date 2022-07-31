@@ -91,7 +91,7 @@ public class TraineeListFragment extends Fragment {
     public void onStart() {
         super.onStart();
         traineeListViewModel.traineeListLiveData.observe(getViewLifecycleOwner(), trainees -> {
-            if(trainees != null && trainees.size()>0){
+            if(trainees != null){
                 Log.i(TAG, "List size: "+trainees.size());
                 adapter = new TraineeAdapter(trainees);
                 recyclerView.setLayoutManager(new LinearLayoutManager(context));
