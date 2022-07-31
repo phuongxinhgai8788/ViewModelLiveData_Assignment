@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MVVM_LiveData</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="graduate">Graduate</string>
+    <string name="phone_hint">Enter phone number</string>
+    <string name="account_hint">Enter account</string>
+    <string name="name_hint">Enter name</string>
+    <string name="new_trainee">New Trainee</string>
+</resources>

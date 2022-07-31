@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.mvvm_livedata.trainee_detail.TraineeDetailViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/avatar_iv"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="2"
+        android:src="@mipmap/avatar_foreground"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/account_tv"
+            style="@style/ItemStyle"
+            android:text="@{viewModel.account}"/>
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:text="@{viewModel.name}"
+            style="@style/ItemStyle"/>
+        <TextView
+            android:id="@+id/phone_tv"
+            style="@style/ItemStyle"
+            android:text="@{viewModel.phoneNumber}"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/graduate_iv"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:src="@drawable/ic_graduate"/>
+    </LinearLayout>
+
+</layout>
